@@ -83,7 +83,7 @@ class Zarinpal
 
     public function redirect()
     {
-        header('Location: '.$this->redirectUrl.$this->Authority);
+        header('Location: https://www.zarinpal.com/pg/StartPay/'.$this->Authority.(!env('APP_DEBUG') ? '/ZarinGate' : ''));
         die;
     }
 
